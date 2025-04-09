@@ -1,3 +1,17 @@
+/* importing fonts */
+@font-face {
+    font-family: 'PlusJakartaSansBold';
+    src: url('assets/fonts/PlusJakartaSans-Bold.ttf')
+}
+
+
+@font-face {
+    font-family: 'PlusJakartaSansMedium';
+    src: url('assets/fonts/PlusJakartaSans-Medium.ttf');
+}
+
+
+
 /* defining variables to allow for re-use */
 :root {
     --black_col: #030303;
@@ -24,17 +38,12 @@
 
 body {
     background-color: var(--light_cream_col);
-    /* font-size: 16px; */
-    /* background-color: #030303; */
 }
 
 
 .parent_container {
     max-width: 1440px;
     max-height: 2595px;
-    /* padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 2rem; */
 }
 
 
@@ -56,6 +65,12 @@ body {
 }
 
 
+.logo_free_consultation_text {
+    font-family: 'PlusJakartaSansBold';
+    font-size: 16px;
+}
+
+
 .free_consultation_div_logo {
     width: 228px;
     height: 56px;
@@ -69,19 +84,16 @@ body {
 }
 
 
-
-
-
 .title_section {
     width: 752px;
     height: 150px;
     text-align: center;
-    /* background-color: red; */
     margin: 0 auto 80px auto;
 }
 
 
 .design_solutions_text {
+    font-family: 'PlusJakartaSansBold', sans-serif;
     font-size: 56px;
     line-height: auto;
     letter-spacing: 0px;
@@ -91,10 +103,13 @@ body {
 
 
 .experience_text {
+    font-family: 'PlusJakartaSansMedium', sans-serif;
     font-size: 18px;
     color: var(--medium_brown_col);
     width: 80%;
     margin: 0 auto;
+    line-height: 28px;
+    letter-spacing: 1px;
 }
 
 
@@ -116,8 +131,9 @@ body {
 
 
 .grid_item_text {
+    font-family: 'PlusJakartaSansBold', sans-serif;
     color: var(--white);
-    font-size: 24px;
+    font-size: 22px;
     align-self: end;
 
 }
@@ -230,7 +246,6 @@ body {
 .amy_about_section {
     width: 1110px;
     height: 445px;
-    /* background-color: red; */
     margin: 0 165px 80px 165px;
     display: flex;
     justify-content: space-between;
@@ -251,6 +266,7 @@ body {
 
 
 .amy_intro_text {
+    font-family: 'PlusJakartaSansBold', sans-serif;
     font-size: 40px;
     margin-bottom: 34px;
     line-height: auto;
@@ -260,6 +276,8 @@ body {
 
 
 .amy_experience_text {
+    font-family: 'PlusJakartaSansMedium', sans-serif;
+    color: var(--medium_brown_col);
     font-size: 18px;
     margin-bottom: 32px;
     line-height: 28px;
@@ -279,10 +297,10 @@ body {
 }
 
 
-/* .book_session_logo {
-    align-self: end;
-    
-} */
+.amy_into_free_consultation_text {
+    font-family: 'PlusJakartaSansBold', sans-serif;
+    font-size: 16px;
+}
 
 
 .my_work_section {
@@ -291,6 +309,7 @@ body {
 }
 
 .my_work_header {
+    font-family: 'PlusJakartaSansBold', sans-serif;
     text-align: center;
     margin-bottom: 56px;    
     font-size: 32px;
@@ -375,6 +394,7 @@ body {
 }
 
 .book_call_text {
+    font-family: 'PlusJakartaSansBold', sans-serif;
     color: var(--white);
     font-size: 40px;
     margin-bottom: 25px;
@@ -382,6 +402,7 @@ body {
 
 
 .discuss_text {
+    font-family: 'PlusJakartaSansMedium', sans-serif;
     color: var(--white);
     font-size: 18px;
     line-height: 28px;
