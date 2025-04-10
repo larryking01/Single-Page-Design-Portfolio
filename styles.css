@@ -24,6 +24,7 @@
     --cyan_col: #61C4B7;
     --dark_purple: #552049;
     --white: #FFFFFF;
+    --light_cream_col: #FFF7F0;
 }
 
 
@@ -382,7 +383,6 @@ body {
     background-color: var(--black_col);
     width: 69.4rem;
     height: 20rem;
-    /* margin: 0px 10.3rem 3.5rem 10.3rem; */
     margin: 0px auto 3.5rem auto;
     padding: 5.2rem 5.9rem 5rem 4rem;
     display: flex;
@@ -405,7 +405,7 @@ body {
 
 .book_call_text {
     font-family: 'PlusJakartaSansBold', sans-serif;
-    color: var(--white);
+    color: var(--light_cream_col);
     font-size: 2.5rem;
     margin-bottom: 1.6rem;
 }
@@ -413,7 +413,7 @@ body {
 
 .discuss_text {
     font-family: 'PlusJakartaSansMedium', sans-serif;
-    color: var(--white);
+    color: var(--light_cream_col);
     font-size: 1.1rem;
     line-height: 1.75rem;
 }
@@ -936,6 +936,8 @@ tablet responsiveness */
         text-align: center;
         margin-bottom: 3.5rem;    
         font-size: 2rem;
+        /* margin-top: 1rem; */
+
     }
     
     
@@ -996,8 +998,8 @@ tablet responsiveness */
     .book_call_section {
         background-color: var(--black_col);
         width: 21.438rem;
-        height: 22rem;
-        padding: 3.068rem 1.5rem 3rem 1.5rem;
+        height: 24rem;
+        padding: 3.068rem 1.5rem 2.7rem 1.5rem;
         margin: 0px auto 2.5rem auto;
         display: flex;
         flex-direction: column;
@@ -1008,9 +1010,9 @@ tablet responsiveness */
 
     .discuss_text {
         font-family: 'PlusJakartaSansMedium', sans-serif;
-        color: var(--white);
+        color: var(--light_cream_col);
         font-size: 1rem;
-        line-height: 1.625rem;
+        line-height: 1.7rem;
         width: 16rem;
         justify-self: center;
     }
