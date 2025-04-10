@@ -703,7 +703,7 @@ tablet responsiveness */
         min-width: 18rem;
         margin: 0 auto;
         /* padding-left: 2rem; */
-        /* overflow: hidden; */
+        overflow: hidden;
         /* max-height: 162rem; */
         /* background-color: chartreuse; */
     
@@ -1015,6 +1015,7 @@ tablet responsiveness */
         line-height: 1.7rem;
         width: 16rem;
         justify-self: center;
+        text-align: center;
     }
     
     
