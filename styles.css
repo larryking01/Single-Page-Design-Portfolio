@@ -46,7 +46,7 @@ html {
 body {
     background-color: var(--light_cream_col);
     width: 100%;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     /* overflow-x: hidden; */
     /* padding-top: 2rem; */
 }
@@ -55,7 +55,7 @@ body {
 .parent_container {
     max-width: 90rem;
     margin: 1rem auto;
-    background-color: red;
+    /* background-color: red; */
     /* max-height: 162rem; */
     /* background-color: chartreuse; */
 
@@ -699,14 +699,14 @@ tablet responsiveness */
 /* mobile responsiveness */
 @media ( max-width: 768px ) {
 
-    body {
+    /* body {
         background-color: var(--light_cream_col);
-        /* width: 23.45rem; */
+        width: 23.45rem; 
         background-color: chartreuse;
-        /* overflow-x: hidden; */
-        /* padding-top: 2rem; */
-        /* overflow: hidden; */
-    }    
+        overflow-x: hidden;
+        padding-top: 2rem;
+        overflow: hidden;
+    }     */
 
     .parent_container {
         max-width: 23.45rem;
