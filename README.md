@@ -5,7 +5,7 @@ A single page portfolio display site
 # The following are the git commands that I used in this project.
 
 # 1. git clone <repository url>
-I used it to pull the project repository from GitHub to my local machine.
+I used it to pull the project repository from GitHub to my local machine..
 
 
 # 2. git checkout -b master

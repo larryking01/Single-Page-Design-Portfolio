@@ -29,7 +29,7 @@
 
 
 
-/* presets */
+/* resets */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -39,19 +39,23 @@
 
 html {
     font-size: 16px;
+    /* overflow: hidden; */
 }
 
 
 body {
     background-color: var(--light_cream_col);
+    width: 100%;
+    /* background-color: chartreuse; */
     /* overflow-x: hidden; */
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 
 .parent_container {
     max-width: 90rem;
-    margin: 0 auto;
+    margin: 1rem auto;
+    /* background-color: red; */
     /* max-height: 162rem; */
     /* background-color: chartreuse; */
 
@@ -78,7 +82,8 @@ body {
 }
 
 
-.free_consultation_div_logo {
+.free_consultation_button_black {
+    all: unset;
     width: 14rem;
     height: 4rem;
     background-color: var(--black_col);
@@ -379,42 +384,63 @@ body {
 }
 
 
-.book_call_section {
-    background-color: var(--black_col);
-    width: 69.4rem;
-    height: 20rem;
-    margin: 0px auto 3.5rem auto;
-    padding: 5.2rem 5.9rem 5rem 4rem;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 0.6rem;
-
-}
-
-
-.book_call_div {
-    width: 33.8rem;
-    height: 9.9rem;
-    align-self: center;
-}
-
-
 .free_consultation_text {
     font-size: 1rem;
 }
 
-.book_call_text {
-    font-family: 'PlusJakartaSansBold', sans-serif;
-    color: var(--light_cream_col);
-    font-size: 2.5rem;
-    margin-bottom: 1.6rem;
+
+.book_call_section {
+    max-width: 69.375rem;
+    height: 20rem;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    background-color: var(--black_col);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
-.discuss_text {
-    font-family: 'PlusJakartaSansMedium', sans-serif;
+.book_call_and_discuss_div {
+    max-width: 33.75rem;
+    height: 9.938rem;
+}
+
+
+.book_call_and_discuss_div h3 {
+    font-size: 2.5rem;
     color: var(--light_cream_col);
-    font-size: 1.1rem;
+    font-family: 'PlusJakartaSansBold', sans-serif;
+    margin-bottom: 1.563rem;
+}
+
+
+.book_call_and_discuss_div p {
+    color: var(--light_cream_col);
+    font-size: 1.125rem;
+    font-family: 'PlusJakartaSansMedium', sans-serif;
+}
+
+
+.free_consultation_button_light_red {
+    all: unset;
+    background-color: var(--light_red_col);
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.75rem;
+    width: 14.25rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.free_consultation_button_light_red p {
+    font-size: 1rem;
+    font-family: 'PlusJakartaSansBold', sans-serif;
     line-height: 1.75rem;
 }
 
@@ -429,8 +455,7 @@ tablet responsiveness */
 @media ( max-width: 1024px ) {
     .parent_container {
         max-width: 48rem;
-        margin: 0 auto;
-
+        margin: 1rem auto;
         /* max-height: 172.6rem; */
         /* overflow-x: hidden; */
         /* background-color: chartreuse; */
@@ -442,7 +467,6 @@ tablet responsiveness */
         margin: 0 auto 4rem auto;
         display: flex;
         justify-content: space-between;
-        /* background-color: blue; */
     }
 
 
@@ -470,19 +494,15 @@ tablet responsiveness */
         height: 8.7rem;
         text-align: center;
         margin: 0 auto 5rem auto;
-        /* margin: 0 2.5rem 5rem 2.5rem; */
-        /* background-color: red; */
     }
 
 
     .grid_items_section {
         width: 43.1rem;
         margin: 0 auto 8rem auto;
-        /* margin: 0 2.4rem 8rem 2.4rem; */
         height: 35.6rem;
         display: grid;
         grid-template-columns: repeat(2, 20.8rem);
-        /* background-color: green; */
         gap: 1.5rem;
     
     }
@@ -554,11 +574,9 @@ tablet responsiveness */
     .amy_about_section {
         width: 43.125rem;
         height: 22.75rem;
-        /* margin: 0 2.5rem 7.5rem 2.5rem; */
         margin: 0 auto 7.5rem auto;
         display: flex;
         justify-content: space-between;
-        /* background-color: yellow; */
 
     }
 
@@ -609,10 +627,8 @@ tablet responsiveness */
     
 
     .my_work_section {
-        /* width: 100%; */
         width: 48rem;
         overflow: hidden;
-        /* background-color: #755CDE; */
     }
 
 
@@ -651,41 +667,66 @@ tablet responsiveness */
         margin-bottom: 7.5rem;
     }
     
-    
+
     .book_call_section {
-        background-color: var(--black_col);
-        width: 43.125rem;
+        max-width: 43.125rem;
         height: 22rem;
-        /* margin: 0px 2.438rem 3.5rem 2.438rem; */
+        border-radius: 0.625rem;
         margin: 0 auto 3.5rem auto;
-        padding: 3.5rem 4.68rem 4rem 4.68rem;
+        background-color: var(--black_col);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        border-radius: 0.6rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     
+    
+    .book_call_and_discuss_div {
+        max-width: 33.75rem;
+        height: 9.375rem;
     }
-
-
-    .discuss_text {
-        font-family: 'PlusJakartaSansMedium', sans-serif;
-        color: var(--white);
-        font-size: 1.1rem;
-        line-height: 1.75rem;
-        margin-bottom: 1.625rem;
-    }
-        
-
-
-    .book_call_text {
-        font-family: 'PlusJakartaSansBold', sans-serif;
-        color: var(--white);
+    
+    
+    .book_call_and_discuss_div h3 {
         font-size: 2rem;
-        margin-bottom: 1.62rem;
+        color: var(--light_cream_col);
+        font-family: 'PlusJakartaSansBold', sans-serif;
+        margin-bottom: 1.625rem;
         text-align: center;
     }
-
+    
+    
+    .book_call_and_discuss_div p {
+        color: var(--light_cream_col);
+        font-size: 1.125rem;
+        font-family: 'PlusJakartaSansMedium', sans-serif;
+    }
+    
+    
+    .free_consultation_button_light_red {
+        all: unset;
+        background-color: var(--light_red_col);
+        color: var(--white);
+        font-size: 1rem;
+        line-height: 1.75rem;
+        width: 14.25rem;
+        height: 3.5rem;
+        border-radius: 1.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    .free_consultation_button_light_red p {
+        font-size: 1rem;
+        font-family: 'PlusJakartaSansBold', sans-serif;
+        line-height: 1.75rem;
+    }
+    
 }
+
 
 
 
@@ -694,18 +735,13 @@ tablet responsiveness */
 
 /* mobile responsiveness */
 @media ( max-width: 768px ) {
-    /* body {
-        max-width: 23.45rem;
-    } */
+
 
     .parent_container {
         max-width: 23.45rem;
         min-width: 18rem;
-        margin: 0 auto;
-        /* padding-left: 2rem; */
         overflow: hidden;
-        /* max-height: 162rem; */
-        /* background-color: chartreuse; */
+        margin: 1rem auto;
     
     }
 
@@ -713,8 +749,6 @@ tablet responsiveness */
     .logo_consultation_btn_section {
         width: 21.43rem;
         margin: 1rem auto 2rem auto;
-        /* display: flex;
-        justify-content: space-between; */
     }
 
 
@@ -726,15 +760,14 @@ tablet responsiveness */
 
     .free_consultation_div_logo {
         width: 11rem;
-        height: 2.5rem;
+        height: 3rem;
         background-color: var(--black_col);
         color: #FFF7F0;
         border-radius: 1.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* align-self: end; */
-        align-self: center;
+        align-self: start;
     }
 
 
@@ -748,7 +781,6 @@ tablet responsiveness */
         height: 13.125rem;
         text-align: center;
         margin: 0 auto 2rem auto;
-        /* background-color: red; */
     }
 
     .design_solutions_text {
@@ -773,21 +805,19 @@ tablet responsiveness */
     
 
     .grid_items_section {
-        width: 21.413rem;
-        /* margin: 0 10rem 8rem 10rem; */
+        max-width: 21.413rem;
         margin: 0 auto 8rem auto;
         height: 72.75rem;
         display: grid;
         grid-template-columns: repeat(1, 21.375rem);
         gap: 2rem;
-        /* background-color: red; */
     
     }
 
 
     .graphic_design_div {
         background-color: var(--galactic_blue_col);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 22.75rem;
         grid-row: 1 / 3;
         display: flex;
@@ -795,7 +825,7 @@ tablet responsiveness */
 
 
     .ui_ux_apps_div {
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
         justify-content: space-between;
@@ -823,7 +853,7 @@ tablet responsiveness */
 
     .photography_div {
         background-color: var(--cyan_col);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
     }
@@ -831,7 +861,7 @@ tablet responsiveness */
     
     .illustrations_div {
         background-color: var(--light_red_col);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
     
@@ -840,7 +870,7 @@ tablet responsiveness */
     
     .motion_graphics_div {
         background-color: var(--dark_purple);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
     
@@ -850,53 +880,51 @@ tablet responsiveness */
         font-size: 1.5rem;
     }
 
+
     /* grid items images */
-.graphic_design_image {
-    width: 7rem;
-    height: 10rem;
-}
+    .graphic_design_image {
+        width: 7rem;
+        height: 10rem;
+    }
 
 
-.photography_design_image {
-    width: 10rem;
-    height: 4rem;
-}
+    .photography_design_image {
+        width: 10rem;
+        height: 4rem;
+    }
 
 
-.illustration_design_image {
-    width: 8rem;
-    height: 4rem;
-}
+    .illustration_design_image {
+        width: 8rem;
+        height: 4rem;
+    }
 
 
-.motion_graphic_design_image {
-    width: 8rem;
-    height: 4rem;
+    .motion_graphic_design_image {
+        width: 8rem;
+        height: 4rem;
 
-}
-
-
-.ui_ux_design_image {
-    width: 4rem;
-    height: 4rem;
-}
+    }
 
 
-.apps_design_image {
-    width: 4rem;
-    height: 4rem;
-}
+    .ui_ux_design_image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .apps_design_image {
+        width: 4rem;
+        height: 4rem;
+    }
 
 
     .amy_about_section {
         width: 21.438rem;
         height: 37.625rem;
-        /* margin: 0 10.3rem 5rem 10.3rem; */
         margin: 0 auto 6.25rem auto;
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
-        /* background-color: red; */
     }
 
 
@@ -936,7 +964,6 @@ tablet responsiveness */
         text-align: center;
         margin-bottom: 3.5rem;    
         font-size: 2rem;
-        /* margin-top: 1rem; */
 
     }
     
@@ -991,63 +1018,90 @@ tablet responsiveness */
     .right_arrow_icon {
         width: 1rem;
         height: 1rem;
-    }
-
-
+    }    
+    
 
     .book_call_section {
+        max-width: 20.375rem;
+        height: 22rem;
+        border-radius: 0.625rem;
+        margin: 0 auto;
         background-color: var(--black_col);
-        width: 21.438rem;
-        height: 24rem;
-        padding: 3.068rem 1.5rem 2.7rem 1.5rem;
-        margin: 0px auto 2.5rem auto;
         display: flex;
         flex-direction: column;
-        border-radius: 0.6rem;
-    
+        justify-content: space-around;
+        align-items: center;
     }
 
 
-    .discuss_text {
-        font-family: 'PlusJakartaSansMedium', sans-serif;
+    .book_call_and_discuss_div {
+        max-width: 18.438rem;
+        height: 9.938rem;
+    }
+
+
+    .book_call_and_discuss_div h3 {
+        font-size: 1.625rem;
         color: var(--light_cream_col);
-        font-size: 1rem;
-        line-height: 1.7rem;
-        width: 16rem;
-        justify-self: center;
+        font-family: 'PlusJakartaSansBold', sans-serif;
+        margin-bottom: 1.563rem;
         text-align: center;
     }
-    
-    
-
-    
-    
-    
 
 
+    .book_call_and_discuss_div p {
+        color: var(--light_cream_col);
+        font-family: 'PlusJakartaSansMedium', sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.625rem;
+        width: 16rem;
+    }
 
 
-    
-    
+    .free_consultation_button_light_red {
+        all: unset;
+        background-color: var(--light_red_col);
+        color: var(--white);
+        font-size: 1rem;
+        line-height: 1.75rem;
+        width: 11rem;
+        height: 2.75rem;
+        border-radius: 1.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 
 
+    .free_consultation_button_light_red p {
+        font-size: 0.875rem;
+        font-family: 'PlusJakartaSansBold', sans-serif;
+        line-height: 1.75rem;
+    }
+
+
+    .logo_consultation_btn_section {
+        max-width: 20.375rem;
+        margin: 2.21rem auto 4.125rem auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .free_consultation_button_black {
+        all: unset;
+        width: 11rem;
+        height: 3rem;
+        background-color: var(--black_col);
+        color: #FFF7F0;
+        border-radius: 1.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: start;
         
-
-
-    
-    
-
-
-    
-
-    
-    
-
-
-
-    
-
-
+    }
 
     
 }
