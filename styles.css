@@ -29,7 +29,7 @@
 
 
 
-/* presets */
+/* resets */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -39,19 +39,23 @@
 
 html {
     font-size: 16px;
+    /* overflow: hidden; */
 }
 
 
 body {
     background-color: var(--light_cream_col);
+    width: 100%;
+    background-color: chartreuse;
     /* overflow-x: hidden; */
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 
 .parent_container {
     max-width: 90rem;
-    margin: 0 auto;
+    margin: 1rem auto;
+    background-color: red;
     /* max-height: 162rem; */
     /* background-color: chartreuse; */
 
@@ -429,7 +433,7 @@ tablet responsiveness */
 @media ( max-width: 1024px ) {
     .parent_container {
         max-width: 48rem;
-        margin: 0 auto;
+        margin: 1rem auto;
 
         /* max-height: 172.6rem; */
         /* overflow-x: hidden; */
@@ -694,16 +698,22 @@ tablet responsiveness */
 
 /* mobile responsiveness */
 @media ( max-width: 768px ) {
-    /* body {
-        max-width: 23.45rem;
-    } */
+
+    body {
+        background-color: var(--light_cream_col);
+        /* width: 23.45rem; */
+        background-color: chartreuse;
+        /* overflow-x: hidden; */
+        /* padding-top: 2rem; */
+        /* overflow: hidden; */
+    }    
 
     .parent_container {
         max-width: 23.45rem;
         min-width: 18rem;
-        margin: 0 auto;
-        /* padding-left: 2rem; */
         overflow: hidden;
+        margin: 1rem auto;
+        /* padding-left: 2rem; */
         /* max-height: 162rem; */
         /* background-color: chartreuse; */
     
@@ -726,7 +736,7 @@ tablet responsiveness */
 
     .free_consultation_div_logo {
         width: 11rem;
-        height: 2.5rem;
+        height: 3rem;
         background-color: var(--black_col);
         color: #FFF7F0;
         border-radius: 1.75rem;
@@ -734,7 +744,7 @@ tablet responsiveness */
         justify-content: center;
         align-items: center;
         /* align-self: end; */
-        align-self: center;
+        align-self: start;
     }
 
 
@@ -773,7 +783,7 @@ tablet responsiveness */
     
 
     .grid_items_section {
-        width: 21.413rem;
+        max-width: 21.413rem;
         /* margin: 0 10rem 8rem 10rem; */
         margin: 0 auto 8rem auto;
         height: 72.75rem;
@@ -787,7 +797,7 @@ tablet responsiveness */
 
     .graphic_design_div {
         background-color: var(--galactic_blue_col);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 22.75rem;
         grid-row: 1 / 3;
         display: flex;
@@ -795,7 +805,7 @@ tablet responsiveness */
 
 
     .ui_ux_apps_div {
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
         justify-content: space-between;
@@ -823,7 +833,7 @@ tablet responsiveness */
 
     .photography_div {
         background-color: var(--cyan_col);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
     }
@@ -831,7 +841,7 @@ tablet responsiveness */
     
     .illustrations_div {
         background-color: var(--light_red_col);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
     
@@ -840,7 +850,7 @@ tablet responsiveness */
     
     .motion_graphics_div {
         background-color: var(--dark_purple);
-        width: 21.438rem;
+        max-width: 21.413rem;
         height: 11.375rem;
         display: flex;
     
@@ -851,41 +861,41 @@ tablet responsiveness */
     }
 
     /* grid items images */
-.graphic_design_image {
-    width: 7rem;
-    height: 10rem;
-}
+    .graphic_design_image {
+        width: 7rem;
+        height: 10rem;
+    }
 
 
-.photography_design_image {
-    width: 10rem;
-    height: 4rem;
-}
+    .photography_design_image {
+        width: 10rem;
+        height: 4rem;
+    }
 
 
-.illustration_design_image {
-    width: 8rem;
-    height: 4rem;
-}
+    .illustration_design_image {
+        width: 8rem;
+        height: 4rem;
+    }
 
 
-.motion_graphic_design_image {
-    width: 8rem;
-    height: 4rem;
+    .motion_graphic_design_image {
+        width: 8rem;
+        height: 4rem;
 
-}
-
-
-.ui_ux_design_image {
-    width: 4rem;
-    height: 4rem;
-}
+    }
 
 
-.apps_design_image {
-    width: 4rem;
-    height: 4rem;
-}
+    .ui_ux_design_image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .apps_design_image {
+        width: 4rem;
+        height: 4rem;
+    }
 
 
     .amy_about_section {
