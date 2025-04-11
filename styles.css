@@ -1018,13 +1018,29 @@ tablet responsiveness */
     }
 
 
+    .book_call_div {
+        width: 18.433rem;
+        height: 15.938rem;
+        /* justify-self: center; */
+    }
+
+
+    .book_call_text {
+        font-family: 'PlusJakartaSansBold', sans-serif;
+        color: var(--light_cream_col);
+        font-size: 1.625rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+
     .discuss_text {
         font-family: 'PlusJakartaSansMedium', sans-serif;
         color: var(--light_cream_col);
         font-size: 1rem;
         line-height: 1.7rem;
         width: 16rem;
-        justify-self: center;
+        /* justify-self: center; */
         text-align: center;
     }
     
