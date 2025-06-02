@@ -1,5 +1,5 @@
 # Single-Page-Design-Portfolio
-A single page portfolio display site 
+A single page portfolio display site.
 
 
 # The following are the git commands that I used in this project.
