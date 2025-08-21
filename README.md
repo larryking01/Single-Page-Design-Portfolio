@@ -53,6 +53,7 @@ While AWS S3 can host static websites, it comes with some limitations:
        ]
    }
 
+
 This exposes the S3 bucket and its content to anyone with the URL — not ideal for production.
 
 
@@ -94,6 +95,7 @@ I updated the bucket policy to only allow CloudFront:
     ]
 }
 
+```
 
 This ensures only CloudFront can fetch files, adding a strong security layer.
 
@@ -113,9 +115,9 @@ Provides a consistent and fast user experience for all clients.
 
 Given the benefits:
 
-Amazon S3 for cost-effective static hosting.
+* Amazon S3 for cost-effective static hosting.
 
-Amazon CloudFront for HTTPS support, added security, and reduced latency.
+* Amazon CloudFront for HTTPS support, added security, and reduced latency.
 
 I chose to combine both for this project.
 
